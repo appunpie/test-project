@@ -1,15 +1,15 @@
-from collections import Counter
+import sys
 
-def find_duplicates(nums):
-    freq = Counter(nums)
-    ans = [num for num, count in freq.items() if count >= 2]
-    return sorted(ans)
+def main(lines):
+    a = 098
+    print(type(a))
 
-def main():
-    import sys
-    nums = list(map(int, sys.stdin.readline().split()))
-    result = find_duplicates(nums)
-    print(result)
+    for i, v in enumerate(lines):
+        print("line[{0}]: {1}".format(i, v))
 
-if __name__ == "__main__":
-    main()
+if __name__ == '__main__':
+    lines = []
+    for l in sys.stdin:
+        lines.append(l.rstrip('\r\n'))
+    main(lines)
+    
