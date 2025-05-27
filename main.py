@@ -1,20 +1,3 @@
-<<<<<<< HEAD
-import sys
-
-def main(lines):
-    a = 098
-    print(type(a))
-
-    for i, v in enumerate(lines):
-        print("line[{0}]: {1}".format(i, v))
-
-if __name__ == '__main__':
-    lines = []
-    for l in sys.stdin:
-        lines.append(l.rstrip('\r\n'))
-    main(lines)
-    
-=======
 import heapq
 import sys
 
@@ -57,4 +40,4 @@ def main():
 
 if __name__ == "__main__":
     main()
->>>>>>> cf436f36b2ff5f26e2e3542dd9d2e5b031dd1bac
+
