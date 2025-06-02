@@ -1,5 +1,6 @@
 import sys
 import hashlib
+import json
 
 def main():
     seed = 'zdfvadfv'
